@@ -117,23 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="header_cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\header_cover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="header_profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\header_profile2..png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="default" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="107909497 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\107909497 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="Guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="Guna2HtmlLabel1.Text" xml:space="preserve">
+    <value>    &lt;h1&gt;OoenColSelect - 顏色選擇工具&lt;/h1&gt;
+    
+    &lt;p&gt;&lt;strong&gt;OoenColSelect&lt;/strong&gt; 是一個功能強大的顏色選擇工具，它允許您輕鬆地獲取屏幕上任何位置的顏色信息。&lt;/p&gt;
+
+    &lt;h2&gt;主要功能：&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;strong&gt;即時顏色監控：&lt;/strong&gt; OoenColSelect 不斷監測您的滑鼠游標位置，並顯示游標所在位置的顏色信息。&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;RGBA 和 HEX 顏色碼：&lt;/strong&gt; 它將為您提供游標所在位置的顏色的RGBA（紅綠藍透明度）和HEX（十六進制）顏色碼。&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;CMYK 顏色碼：&lt;/strong&gt; OoenColSelect 還提供了游標所在位置的CMYK（青色、洋紅、黃色、黑色）顏色碼。&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;剪貼板複製：&lt;/strong&gt; 您可以輕鬆地將顏色信息複製到剪貼板，以便在其他應用程序中使用。&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h2&gt;如何使用：&lt;/h2&gt;
+    &lt;ol&gt;
+        &lt;li&gt;執行 OoenColSelect 軟體。&lt;/li&gt;
+        &lt;li&gt;將滑鼠游標移動到您想要檢查的顏色位置。&lt;/li&gt;
+        &lt;li&gt;軟體將即時顯示該位置的RGBA、HEX和CMYK顏色碼。&lt;/li&gt;
+        &lt;li&gt;按下 F9 鍵複製RGBA顏色、F10 鍵複製HEX顏色、F11 鍵複製CMYK顏色到剪貼板。&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;p&gt;&lt;strong&gt;OoenColSelect&lt;/strong&gt; 是一個非常實用的工具，特別適合設計師、開發人員和任何需要準確顏色選擇的用戶。快來嘗試它，使您的顏色選擇過程更加輕鬆！&lt;/p&gt;</value>
   </data>
 </root>

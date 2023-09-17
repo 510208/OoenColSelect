@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>OoenColSelect</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="favicon.ico" height="40"> OoenColSelect</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">首頁</a>
+            </li>
+            </ul>
+            <span class="navbar-text">
+            體驗隨開即用的選色器，就從此開始
+            </span>
+            <p>　</p>
+            <span class="navbar-text">
+                <a href="https://github.com/510208/OoenColSelect" class="btn btn-outline-success"><i class="bi bi-github"></i></a>
+            </span>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-light" style="height: 250px; padding-left: 50px; padding-right: 50px;">
+        <div class="row align-items-center" id="header-first" style="height: 250px;">
+            <div class="left col" style="padding-left: 5%; width: 75%;">
+                <h2 class="text-white" style="font-size: 60px;"><img src="/images/cover.png" width="50%"></h2>
+                <blockquote class="text-black">體驗一開即選，一鍵即得的取色手感</blockquote>
+            </div>
+            <div class="right col" style="text-align: right; padding: 0%; height: 100%; overflow: hidden; width: 25%; padding-right: 250px;">
+                <img src="/images/capcut.png" alt="" class="" width="30%" height="100%">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark" style="padding: 100px;">
+        <h2 class="text-white" style="text-align: center;">為什麼要使用 OoenColSelect？</h2>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="margin: 5px;">
+                    <img src="https://images.unsplash.com/photo-1631127887321-0a2cf902a002?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="card-img-top">
+                    <div class="card-body">
+                        <h3>多種表示方式</h3>
+                        <p class="card-text">套件採用多種色碼表示方式，如
+                            <abbr title="三原色光模式，又稱RGB顏色模型或紅綠藍顏色模型，是一種加色模型，將紅、綠、藍三原色的色光以不同的比例相加，以合成產生各種色彩光。" class="initialism">RGB</abbr>、
+                            <abbr title="HSL和HSV都是將RGB色彩模型中的點表示在圓柱坐標系中的方法。這兩種表示法試圖做到比基於笛卡爾坐標系幾何結構的RGB模型更加直觀。HSL即色相、飽和度、亮度。" class="initialism">HSL</abbr>、
+                            <abbr title="印刷四分色模式（CMYK color model）是彩色印刷時採用的一種套色模式，利用色料的三原色混色原理，加上黑色油墨，共計四種顏色混合疊加，形成所謂「全彩印刷」。" class="initialism">CMYK</abbr>
+                            等，讓您更容易取得想要的色碼。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="margin: 5px">
+                    <img src="https://images.unsplash.com/photo-1529672425113-d3035c7f4837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="card-img-top">
+                    <div class="card-body">
+                        <h3>即時顏色監控</h3>
+                        <p class="card-text">採用雙精度游標監控與開放式放大鏡工具，方便使用者在<strong>0.1</strong>秒內顯示該顏色的色碼。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="margin: 5px">
+                    <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80" class="card-img-top">
+                    <div class="card-body">
+                        <h3>開放的原始碼</h3>
+                        <p class="card-text">我們採用<strong>GNU</strong>授權，讓您可以自由的使用、修改、散佈、商業使用，甚至是將套件整合到您的專案中。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark" style="padding: 100px;">
+        <h2 class="text-white" style="text-align: center;">如何使用 OoenColSelect？</h2>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="margin: 5px;">
+                    <div class="card-body">
+                        <h3>安裝</h3>
+                        <p class="card-text">您可以透過 <a href="https://github.com/510208/OoenColSelect/releases/latest" target="_blank">Github Releases</a> 來安裝套件</p>
+                    </div>
+                </div>
+                <div class="card" style="margin: 5px;">
+                    <div class="card-body">
+                        <h3>使用</h3>
+                        <p class="card-text">您可以透過 <a href="https://github.com/510208/OoenColSelect/" target="_blank">官方讀我檔案</a> 來學習使用的方式</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -234,5 +234,6 @@ Public Class Main
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Unhook()
+        End
     End Sub
 End Class

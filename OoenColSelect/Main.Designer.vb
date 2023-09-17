@@ -23,10 +23,12 @@ Partial Class Main
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lblRGBAColor = New System.Windows.Forms.Label()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.PictureBoxMagnifier = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -42,12 +44,11 @@ Partial Class Main
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.imgColorLook = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxMagnifier = New System.Windows.Forms.PictureBox()
         Me.btnAbout = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBoxMagnifier, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgColorLook, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxMagnifier, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -81,6 +82,15 @@ Partial Class Main
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "放大鏡"
+        '
+        'PictureBoxMagnifier
+        '
+        Me.PictureBoxMagnifier.Location = New System.Drawing.Point(4, 19)
+        Me.PictureBoxMagnifier.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBoxMagnifier.Name = "PictureBoxMagnifier"
+        Me.PictureBoxMagnifier.Size = New System.Drawing.Size(75, 80)
+        Me.PictureBoxMagnifier.TabIndex = 3
+        Me.PictureBoxMagnifier.TabStop = False
         '
         'Label2
         '
@@ -238,15 +248,6 @@ Partial Class Main
         Me.imgColorLook.TabIndex = 12
         Me.imgColorLook.TabStop = False
         '
-        'PictureBoxMagnifier
-        '
-        Me.PictureBoxMagnifier.Location = New System.Drawing.Point(4, 19)
-        Me.PictureBoxMagnifier.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBoxMagnifier.Name = "PictureBoxMagnifier"
-        Me.PictureBoxMagnifier.Size = New System.Drawing.Size(75, 80)
-        Me.PictureBoxMagnifier.TabIndex = 3
-        Me.PictureBoxMagnifier.TabStop = False
-        '
         'btnAbout
         '
         Me.btnAbout.BorderRadius = 10
@@ -289,15 +290,16 @@ Partial Class Main
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lblRGBAColor)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.ImeMode = System.Windows.Forms.ImeMode.Disable
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Main"
         Me.Text = "Form1"
         Me.TopMost = True
         Me.GroupBox1.ResumeLayout(False)
+        CType(Me.PictureBoxMagnifier, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgColorLook, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxMagnifier, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

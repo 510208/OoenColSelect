@@ -47,6 +47,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.5\lib\net472\Guna.UI2.dll</HintPath>
@@ -85,6 +88,7 @@
     <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -92,10 +96,10 @@
       <DependentUpon>Main.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Load.Designer.vb">
-      <DependentUpon>Load.vb</DependentUpon>
+    <Compile Include="Loadfrm.Designer.vb">
+      <DependentUpon>Loadfrm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Load.vb">
+    <Compile Include="Loadfrm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="modClipboard.vb" />
@@ -124,8 +128,8 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Load.resx">
-      <DependentUpon>Load.vb</DependentUpon>
+    <EmbeddedResource Include="Loadfrm.resx">
+      <DependentUpon>Loadfrm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -167,6 +171,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\107909497 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

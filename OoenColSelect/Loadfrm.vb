@@ -1,6 +1,6 @@
 ﻿Imports System.Windows.Forms
 
-Public Class Load
+Public Class Loadfrm
 
     Private Sub Load_Load(sender As Object, e As EventArgs) Handles Me.Load
         ' 檢查註冊表中是否有值，如果有值，則表示已經執行過一次，無需再次彈出訊息框
@@ -24,6 +24,5 @@ Public Class Load
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Me.Hide()
         Main.Show()
-        Me.Close()
     End Sub
 End Class

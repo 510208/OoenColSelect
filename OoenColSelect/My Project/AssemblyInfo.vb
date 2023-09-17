@@ -9,10 +9,10 @@ Imports System.Runtime.InteropServices
 ' 檢閱組件屬性的值
 
 <Assembly: AssemblyTitle("OoenColSelect")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyDescription("Free color Picker")>
+<Assembly: AssemblyCompany("510208 Developer")>
 <Assembly: AssemblyProduct("OoenColSelect")>
-<Assembly: AssemblyCopyright("Copyright ©  2023")>
+<Assembly: AssemblyCopyright("Copyright © 510208 : 2023")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' 設為預設，如下所示:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.3.0.1")>
+<Assembly: AssemblyFileVersion("1.3.0.1")>

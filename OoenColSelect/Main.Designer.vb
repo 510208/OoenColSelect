@@ -294,7 +294,7 @@ Partial Class Main
         Me.ImeMode = System.Windows.Forms.ImeMode.Disable
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Main"
-        Me.Text = "Form1"
+        Me.Text = "OoenColSelect"
         Me.TopMost = True
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.PictureBoxMagnifier, System.ComponentModel.ISupportInitialize).EndInit()

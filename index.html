@@ -10,10 +10,60 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>OoenColSelect</title>
     <style>
-        .card {
+        .card-height {
             min-height: 475px;
             height: 475px;
             max-height: 475px;
+        }
+
+        h2 {
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: 2px; /* 将底线与文字之间的间隔设置为2px */
+            left: 0;
+            width: 100%; /* 底线的宽度与文字等长 */
+            height: 25px;
+            background-color: rgba(206, 206, 206, 0.203); /* 底线颜色，可以根据需要更改 */
+            animation: underlineAnimation 0.5s forwards; /* 应用动画 */
+        }
+
+        @keyframes underlineAnimation {
+            from {
+                width: 0;
+            }
+            to {
+                width: 80%;
+            }
+        }
+
+        a {
+            position: relative;
+            text-decoration: none; /* 移除默认的文本底线 */
+            color: #008211; /* 链接文本颜色 */
+        }
+
+        a:hover {
+            color: #00aa17;
+        }
+
+        a::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px; /* 底线的高度 */
+            bottom: 0;
+            left: 0;
+            background-color: #008211; /* 底线颜色 */
+            transition: width 0.3s ease; /* 添加伸展动画 */
+        }
+
+        a:hover::before {
+            width: 100%; /* 鼠标悬停时伸展底线到100% */
         }
     </style>
 </head>
@@ -48,7 +98,7 @@
                 <blockquote class="text-black">體驗一開即選，一鍵即得的取色手感</blockquote>
             </div>
             <div class="right col" style="text-align: right; padding: 0%; height: 100%; overflow: hidden; width: 25%; padding-right: 250px;">
-                <img src="/images/capcut.png" alt="" class="" width="30%" height="100%">
+                <img src="/images/capcut.png" alt="" class="" width="273px" height="292px">
             </div>
         </div>
     </div>
@@ -57,7 +107,7 @@
         <h2 class="text-white" style="text-align: center;">為什麼要使用 OoenColSelect？</h2>
         <div class="row">
             <div class="col">
-                <div class="card" style="margin: 5px;">
+                <div class="card card-height" style="margin: 5px;">
                     <img src="https://images.unsplash.com/photo-1631127887321-0a2cf902a002?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="card-img-top">
                     <div class="card-body">
                         <h3>多種表示方式</h3>
@@ -71,7 +121,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="margin: 5px">
+                <div class="card card-height" style="margin: 5px">
                     <img src="https://images.unsplash.com/photo-1529672425113-d3035c7f4837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="card-img-top">
                     <div class="card-body">
                         <h3>即時顏色監控</h3>
@@ -81,7 +131,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="margin: 5px">
+                <div class="card card-height" style="margin: 5px">
                     <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80" class="card-img-top">
                     <div class="card-body">
                         <h3>開放的原始碼</h3>
@@ -91,7 +141,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="margin: 5px">
+                <div class="card card-height" style="margin: 5px">
                     <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80" class="card-img-top">
                     <div class="card-body">
                         <h3>簡潔輕量的專案</h3>
@@ -103,20 +153,20 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-dark" style="padding: 100px;">
+    <div class="container-fluid bg-secondary" style="padding: 100px;">
         <h2 class="text-white" style="text-align: center;">如何使用 OoenColSelect？</h2>
         <div class="row">
             <div class="col">
-                <div class="card" style="margin: 5px;">
+                <div class="card bg-dark" style="margin: 5px; background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('/images/icons/github.svg'); background-size: contain; background-repeat: no-repeat; background-position: right center;">
                     <div class="card-body">
-                        <h3>安裝</h3>
-                        <p class="card-text">您可以透過 <a href="https://github.com/510208/OoenColSelect/releases/latest" target="_blank">Github Releases</a> 來安裝套件</p>
+                        <h3 class="text-white">安裝</h3>
+                        <p class="card-text text-white">您可以透過 <a href="https://github.com/510208/OoenColSelect/releases/latest" target="_blank">Github Releases</a> 來安裝套件</p>
                     </div>
                 </div>
-                <div class="card" style="margin: 5px;">
+                <div class="card bg-dark" style="margin: 5px; background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('/images/icons/md.svg'); background-size: contain; background-repeat: no-repeat; background-position: right center;">
                     <div class="card-body">
-                        <h3>使用</h3>
-                        <p class="card-text">您可以透過 <a href="https://github.com/510208/OoenColSelect/" target="_blank">官方讀我檔案</a> 來學習使用的方式</p>
+                        <h3 class="text-white">使用</h3>
+                        <p class="card-text text-white">您可以透過 <a href="https://github.com/510208/OoenColSelect/" target="_blank">官方讀我檔案</a> 來學習使用的方式</p>
                     </div>
                 </div>
             </div>
